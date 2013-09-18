@@ -25,4 +25,6 @@ faculty_class_roster.html - personalized list of students in the class selected 
 
  = School database = 
  
- 
+ I think the table design is pretty straight-forward except for the address tables. Instead of having SCHOOL and PERSON link
+ directly to ADDRESS, I used tables in the middle to allow for multiple links i.e. if a person had more than one anddress
+ then there would be multiple entries in PERSON_ADDRESS_LINK with their person_serial and different address_serials.
