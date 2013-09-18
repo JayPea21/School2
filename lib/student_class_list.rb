@@ -5,7 +5,7 @@ m = Mysql.new("localhost","root","passwd")
 r = m.query("SELECT class_name,  class_desc
 	    FROM registration
 	    	left join person on person.person_serial = registration.person_serial
-		left join class on regs.class_serial = class.class_serial
+		left join class on registration.class_serial = class.class_serial
 		left join email on email.person_serial = person.person_serial
 	    WHERE registration.person_serial = #{pserial}")
 	#pserial is the person_serial of the student
