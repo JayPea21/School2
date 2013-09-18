@@ -28,3 +28,4 @@ faculty_class_roster.html - personalized list of students in the class selected 
  I think the table design is pretty straight-forward except for the address tables. In the address table, the field "type"
  signifies whether the "link_serial" field is linked to a person or school serial. Without this flag to signify, we could have a
  situation where a school serial and person serial both matched.
+ Theoretically it would be 'S' for student and 'F' for faculty.
