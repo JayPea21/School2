@@ -1,5 +1,8 @@
 School2
 =======
+database_map.png should provide a bird's eye view of the structure of the relational mysql database.
+site_map.png shows the basic structure of the site view.
+
  = School site = 
 
 welcome.html -  Has 2 options, login or create. 
@@ -25,7 +28,9 @@ faculty_class_roster.html - personalized list of students in the class selected 
 
  = School database = 
  
- I think the table design is pretty straight-forward except for the address tables. In the address table, the field "type"
+I think the table design is pretty straight-forward except for the address tables. In the address table, the field "type"
  signifies whether the "link_serial" field is linked to a person or school serial. Without this flag to signify, we could have a
- situation where a school serial and person serial both matched.
- Theoretically it would be 'S' for student and 'F' for faculty.
+ situation where a school serial and person serial both matched. Theoretically it would be 'S' for student and 'F' for faculty.
+
+When a student registers for a class then a record is made in the registration table with the student's person_serial and the
+ class's class_serial.
