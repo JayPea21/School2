@@ -1,6 +1,7 @@
 School2
 =======
 database_map.png should provide a bird's eye view of the structure of the relational mysql database.
+
 site_map.png shows the basic structure of the site view.
 
  = School site = 
